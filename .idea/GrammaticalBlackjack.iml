@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/GrammaticalBlackjack/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/GrammaticalBlackjack/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/ecj25.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/src/apache-log4j-2.9.1-bin" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/src/apache-log4j-2.9.1-bin" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/src/apache-log4j-2.9.1-bin" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/src/apache-log4j-2.9.1-bin" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+  </component>
+</module>

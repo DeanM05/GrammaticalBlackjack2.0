@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="30" status="debug">
+
+<Properties>
+    <Property name="filename-job-log">C:\Users\Dean\Documents\logstash-5.6.2\jobData.txt</Property>
+    <Property name="filename-player-log">C:\Users\Dean\Documents\logstash-5.6.2\logs.txt</Property>
+</Properties>
+
+<Appenders>
+
+    <Console name="appender-Console-all" target="SYSTEM_OUT">
+        <PatternLayout pattern="%msg%n" />
+    </Console>
+
+    <File name="appender-player" fileName="${filename-player-log}" append="true">
+        <PatternLayout pattern="%msg%n" />
+    </File>
+
+    <File name="appender-job" fileName="${filename-job-log}" append="true">
+        <PatternLayout pattern="%msg%n" />
+    </File>
+</Appenders>
+
+
+<Loggers>
+    <Root level="DEBUG">
+        <AppenderRef ref="appender-Console-all" />
+    </Root>
+
+    <Logger name="player-log" additivity="TRUE" level="ALL">
+        <AppenderRef ref="appender-player" level="ALL" />
+    </Logger>
+
+    <Logger name="job-log" additivity="TRUE" level="ALL">
+        <AppenderRef ref="appender-job" level="ALL" />
+    </Logger>
+</Loggers>
+</Configuration>
